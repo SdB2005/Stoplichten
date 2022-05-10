@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<HTML lang= "nl">
+        <head>
+        <meta htpp-equiv="content-type"
+            content= "text/html;
+            charset=UTF-8">
+            <link rel="stylesheet" href="Style.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Stoplicht Project</title>
+    </head>
+    <body>
+            <div id="stoplicht"></div>
+            <div id="stoplicht2"></div>
+            <div id="rondje1"></div>
+            <div id="rondje2"></div>
+            <div id="rondje3"></div>
+            <div id="stok"></div>
+
+        <div id="-stoplicht">
+            <div id="-stoplicht2"></div>
+        </div>
+            <div id="-rondje1" onclick="rood()"></div>
+            <div id="-rondje2" onclick="orange()"></div>
+            <div id="-rondje3" onclick="groen()"></div>
+            <div id="-stok"></div>
+    </body>
+    <script>
+        $(document).ready(function () {
+        var state = 0;
+        setInterval(function () {
+            switch (state) {
+                case 0:
+                    state = 1;
+                    $('#rondje3').css({ 'background-color': 'white' });
+                    $('#rondje1').css({ 'background-color': 'red' });
+                    break;
+                case 1:
+                    state = 3
+                    $('#rondje1').css({ 'background-color': 'white' });
+                    $('#rondje2').css({ 'background-color': 'yellow' });
+                    break;
+                default:
+                    state = 0;
+                    $('#rondje2').css({ 'background-color': 'white' });
+                    $('#rondje3').css({ 'background-color': 'green' });
+            }
+        }, 3000); //ms tijd hoelang aan/uit
+    });
+
+    function rood(){
+        var idr = document.getElementById("-rondje1");
+        idr.style.backgroundColor = ("red")
+        var idr = document.getElementById("-rondje2");
+        idr.style.backgroundColor = ("white")
+        var idr = document.getElementById("-rondje3");
+        idr.style.backgroundColor = ("white")
+    }
+    function orange(){
+        var idr = document.getElementById("-rondje1");
+        idr.style.backgroundColor = ("white")
+        var idr = document.getElementById("-rondje2");
+        idr.style.backgroundColor = ("yellow")
+        var idr = document.getElementById("-rondje3");
+        idr.style.backgroundColor = ("white")
+    }
+    function groen(){
+        var idr = document.getElementById("-rondje1");
+        idr.style.backgroundColor = ("white")
+        var idr = document.getElementById("-rondje2");
+        idr.style.backgroundColor = ("white")
+        var idr = document.getElementById("-rondje3");
+        idr.style.backgroundColor = ("green")
+    }
+    </script>
+    
+</HTML>

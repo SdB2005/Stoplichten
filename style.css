@@ -1,0 +1,131 @@
+html {
+    width: 98%;
+    height: 98%;
+}
+body {
+    height: 98%;
+    width: 98%;
+}
+#stoplicht {
+    border: 1px black solid;
+    border-radius: 2%;
+    box-shadow: 3px 3px black;
+    background-color: grey;
+    width: 180px;
+    height: 330px;
+    position: relative;
+    left: 620px;
+}
+#stoplicht2 {
+    border: black 1% solid;
+    border-radius: 2%;
+    width: 170px;
+    height: 320px;
+    position: relative;
+    left: 627px;
+    bottom: 325px;
+    background-color: black;
+}
+#rondje1 {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    
+    position: absolute;
+    left: 675px;
+    bottom: 645px;
+}
+#rondje2 {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+
+    position: absolute;
+    left: 675px;
+    bottom: 540px;
+}
+#rondje3 {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    left: 675px;
+    bottom: 440px;
+}
+#stok {
+    width: 50px;
+    height: 300px;
+    position: relative;
+    left: 687px;
+    bottom: 317px;
+    background: #FFFFFF;
+    background: -webkit-linear-gradient(top left, #FFFFFF, #B4BBC3);
+    background: -moz-linear-gradient(top left, #FFFFFF, #B4BBC3);
+    background: linear-gradient(to bottom right, #FFFFFF, #B4BBC3);
+}
+
+#-stoplicht {
+    border: 1px black solid;
+    border-radius: 2%;
+    box-shadow: 3px 3px black;
+    background-color: grey;
+    width: 180px;
+    height: 330px;
+    position: absolute;
+    top: 10px;
+    left: 820px;
+}
+#-stoplicht2 {
+    border: black 1% solid;
+    border-radius: 2%;
+    width: 170px;
+    height: 320px;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    background-color: black;
+}
+#-rondje1 {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    
+    position: absolute;
+    left: 875px;
+    bottom: 645px;
+}
+#-rondje2 {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+
+    position: absolute;
+    left: 875px;
+    bottom: 540px;
+}
+#-rondje3 {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    
+    position: absolute;
+    left: 875px;
+    bottom: 440px;
+}
+#-stok {
+    width: 50px;
+    height: 300px;
+    position: absolute;
+    left: 887px;
+    bottom: 112px;
+    background: #FFFFFF;
+    background: -webkit-linear-gradient(top left, #FFFFFF, #B4BBC3);
+    background: -moz-linear-gradient(top left, #FFFFFF, #B4BBC3);
+    background: linear-gradient(to bottom right, #FFFFFF, #B4BBC3);
+}
